@@ -1,0 +1,28 @@
+<h3>Adicionar Funcionário</h3>
+   
+<form method="post">
+    Informe o nome do funcionário..: 
+    <br>
+    <input type="text" name="nome">
+    <br><br>
+    Informe o cpf do funcionário..: 
+    <br>
+    <input type="text" name="cpf">
+    <br><br>
+    Informe o salário do funcionário..: 
+    <br>
+    <input type="text" name="salario">
+    <br><br>
+    <input type="submit" value="Adicionar">
+</form>
+
+<br><br>
+
+<?php echo $this->resp; ?>
+
+<a href="<?php echo $this->url('application/default', 
+                    array('controller' => 'index', 'action' => 'listar')); ?>">
+
+    Listar Funcionario
+
+</a> 
